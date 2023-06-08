@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bravo_Taksi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:Bravo_Taksi" xmlns:ViewModel="clr-namespace:Bravo_Taksi.ViewModel"
+        mc:Ignorable="d"
+        Title="Bravo Taxi" AllowsTransparency="True" WindowStyle="None" Height="530" Width="525" MinWidth="530" MinHeight="530" MaxHeight="550" MaxWidth="526" WindowStartupLocation="CenterScreen">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="2" gif:ImageBehavior.AnimatedSource="/Resources/Bravo Taxi.gif"
+                         gif:ImageBehavior.AutoStart="True">
+        </Image>
+        <Grid Grid.Row="1">
+            <ProgressBar  Minimum="0" Maximum="100" Value="0" Name="pbStatus" Foreground="#FF2EB875" Background="#FFBBBBBB" />
+            <TextBlock Name="TxtB" Text="{Binding ElementName=pbStatus, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,192 @@
+[
+  {
+    "Name": "Jafar",
+    "Surname": "Imamaliyev",
+    "Phone": "503423422",
+    "CarModel": "Prius",
+    "CarVendor": "Toyota",
+    "CarNumber": "20-IJ-200",
+    "CarColor": "Black",
+    "Location": {
+      "X": 49.752868833333331,
+      "Y": 40.305819
+    },
+    "Balance": 0,
+    "Rating": 0,
+    "CountTravel": 0,
+    "TotalRating": 0,
+    "DriverBenefit": 0,
+    "CompanyBenefit": 0
+  },
+  {
+    "Name": "Agha",
+    "Surname": "Akbarzade",
+    "Phone": "708902343",
+    "CarModel": "E-class",
+    "CarVendor": "Mercedes",
+    "CarNumber": "10-AA-230",
+    "CarColor": "Gray",
+    "Location": {
+      "X": 49.834535000000002,
+      "Y": 40.352952166666675
+    },
+    "Balance": 0,
+    "Rating": 0,
+    "CountTravel": 0,
+    "TotalRating": 0,
+    "DriverBenefit": 0,
+    "CompanyBenefit": 0
+  },
+  {
+    "Name": "Ferman",
+    "Surname": "Asadov",
+    "Phone": "556437543",
+    "CarModel": "Optima",
+    "CarVendor": "Kia",
+    "CarNumber": "99-AF-456",
+    "CarColor": "Black",
+    "Location": {
+      "X": 49.755250000000046,
+      "Y": 40.462550000000078
+    },
+    "Balance": 69.030000000000001,
+    "Rating": 35,
+    "CountTravel": 4,
+    "TotalRating": 0,
+    "DriverBenefit": 58.6755,
+    "CompanyBenefit": 10.3545
+  },
+  {
+    "Name": "Ceyhun",
+    "Surname": "Abdullayev",
+    "Phone": "702302932",
+    "CarModel": "Sunny",
+    "CarVendor": "Nissan",
+    "CarNumber": "90-AC-555",
+    "CarColor": "white",
+    "Location": {
+      "X": 49.874780000000044,
+      "Y": 40.492570000000057
+    },
+    "Balance": 223.80999999999997,
+    "Rating": 130,
+    "CountTravel": 18,
+    "TotalRating": 0,
+    "DriverBenefit": 190.23849999999999,
+    "CompanyBenefit": 33.571499999999993
+  },
+  {
+    "Name": "Elgun",
+    "Surname": "Salmanov",
+    "Phone": "556435421",
+    "CarModel": "Lada",
+    "CarVendor": "Niva",
+    "CarNumber": "90-ES-870",
+    "CarColor": "White",
+    "Location": {
+      "X": 49.755250000000046,
+      "Y": 40.462550000000078
+    },
+    "Balance": 64.299999999999997,
+    "Rating": 35,
+    "CountTravel": 8,
+    "TotalRating": 0,
+    "DriverBenefit": 54.655000000000001,
+    "CompanyBenefit": 9.6449999999999996
+  },
+  {
+    "Name": "Nihat",
+    "Surname": "Rustemli",
+    "Phone": "508743953",
+    "CarModel": "Elentra",
+    "CarVendor": "Hyundai",
+    "CarNumber": "90-RN-555",
+    "CarColor": "Black",
+    "Location": {
+      "X": 49.917644000000003,
+      "Y": 40.421194999999997
+    },
+    "Balance": 0,
+    "Rating": 0,
+    "CountTravel": 0,
+    "TotalRating": 0,
+    "DriverBenefit": 0,
+    "CompanyBenefit": 0
+  },
+  {
+    "Name": "Nihad",
+    "Surname": "Axundzade",
+    "Phone": "506903090",
+    "CarModel": "Cruze",
+    "CarVendor": "Chevrolet",
+    "CarNumber": "90-AN-666",
+    "CarColor": "Black",
+    "Location": {
+      "X": 49.80747000000008,
+      "Y": 40.381530000000055
+    },
+    "Balance": 34.009999999999998,
+    "Rating": 40,
+    "CountTravel": 2,
+    "TotalRating": 0,
+    "DriverBenefit": 28.908499999999997,
+    "CompanyBenefit": 5.1014999999999997
+  },
+  {
+    "Name": "Sabina",
+    "Surname": "Shukurova",
+    "Phone": "559658595",
+    "CarModel": "Tida",
+    "CarVendor": "Nissan",
+    "CarNumber": "90-SS-797",
+    "CarColor": "Purple",
+    "Location": {
+      "X": 49.928130000000067,
+      "Y": 40.403310000000033
+    },
+    "Balance": 14.73,
+    "Rating": 5,
+    "CountTravel": 1,
+    "TotalRating": 0,
+    "DriverBenefit": 12.5205,
+    "CompanyBenefit": 2.2095000000000002
+  },
+  {
+    "Name": "Kenan",
+    "Surname": "Nebizade",
+    "Phone": "503829424",
+    "CarModel": "Sonata",
+    "CarVendor": "Hyundai",
+    "CarNumber": "99-KN-454",
+    "CarColor": "Black",
+    "Location": {
+      "X": 50.035620000000051,
+      "Y": 40.431010000000072
+    },
+    "Balance": 22.890000000000001,
+    "Rating": -20,
+    "CountTravel": 1,
+    "TotalRating": 0,
+    "DriverBenefit": 19.456499999999998,
+    "CompanyBenefit": 3.4335000000000004
+  },
+  {
+    "Name": "Leyla",
+    "Surname": "Qocayeva",
+    "Phone": "703453212",
+    "CarModel": "Rio",
+    "CarVendor": "Kia",
+    "CarNumber": "10-QL-450",
+    "CarColor": "White",
+    "Location": {
+      "X": 49.950540000000046,
+      "Y": 40.479760000000056
+    },
+    "Balance": 20,
+    "Rating": 5,
+    "CountTravel": 1,
+    "TotalRating": 0,
+    "DriverBenefit": 17,
+    "CompanyBenefit": 3
+  }
+]

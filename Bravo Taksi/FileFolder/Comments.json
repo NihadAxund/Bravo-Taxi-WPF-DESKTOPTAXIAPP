@@ -1,0 +1,198 @@
+[
+  {
+    "Driver": {
+      "Name": "Elgun",
+      "Surname": "Salmanov",
+      "Phone": "556435421",
+      "CarModel": "Lada",
+      "CarVendor": "Niva",
+      "CarNumber": "90-ES-870",
+      "CarColor": "White",
+      "Location": {
+        "X": 49.872220000000027,
+        "Y": 40.410660000000064
+      },
+      "Balance": 34.189999999999998,
+      "Rating": 10,
+      "CountTravel": 2,
+      "TotalRating": 0,
+      "DriverBenefit": 29.061499999999999,
+      "CompanyBenefit": 5.1284999999999989
+    },
+    "Users": {
+      "History": [],
+      "Username": "Nihad",
+      "Password": "Nihad1234",
+      "Email": "nihataxundzade06@gmail.com"
+    },
+    "Comment_text": "Normal"
+  },
+  {
+    "Driver": {
+      "Name": "Ceyhun",
+      "Surname": "Abdullayev",
+      "Phone": "702302932",
+      "CarModel": "Sunny",
+      "CarVendor": "Nissan",
+      "CarNumber": "90-AC-555",
+      "CarColor": "white",
+      "Location": {
+        "X": 49.83251000000007,
+        "Y": 40.394190000000037
+      },
+      "Balance": 171.49000000000001,
+      "Rating": 105,
+      "CountTravel": 15,
+      "TotalRating": 0,
+      "DriverBenefit": 145.76650000000001,
+      "CompanyBenefit": 25.723500000000005
+    },
+    "Users": {
+      "History": [],
+      "Username": "Nihad",
+      "Password": "Nihad1234",
+      "Email": "nihataxundzade06@gmail.com"
+    },
+    "Comment_text": "Catdiq"
+  },
+  {
+    "Driver": {
+      "Name": "Elgun",
+      "Surname": "Salmanov",
+      "Phone": "556435421",
+      "CarModel": "Lada",
+      "CarVendor": "Niva",
+      "CarNumber": "90-ES-870",
+      "CarColor": "White",
+      "Location": {
+        "X": 49.755250000000046,
+        "Y": 40.462550000000078
+      },
+      "Balance": 64.299999999999997,
+      "Rating": 30,
+      "CountTravel": 8,
+      "TotalRating": 0,
+      "DriverBenefit": 54.655000000000001,
+      "CompanyBenefit": 9.6449999999999996
+    },
+    "Users": {
+      "History": [],
+      "Username": "NIhad",
+      "Password": "Nihad1234",
+      "Email": "nihataxundzade06@gmail.com"
+    },
+    "Comment_text": "Ela"
+  },
+  {
+    "Driver": {
+      "Name": "Ferman",
+      "Surname": "Asadov",
+      "Phone": "556437543",
+      "CarModel": "Optima",
+      "CarVendor": "Kia",
+      "CarNumber": "99-AF-456",
+      "CarColor": "Black",
+      "Location": {
+        "X": 49.755250000000046,
+        "Y": 40.462550000000078
+      },
+      "Balance": 69.030000000000001,
+      "Rating": 15,
+      "CountTravel": 4,
+      "TotalRating": 0,
+      "DriverBenefit": 58.6755,
+      "CompanyBenefit": 10.3545
+    },
+    "Users": {
+      "History": [],
+      "Username": "NIhad",
+      "Password": "Nihad1234",
+      "Email": "nihataxundzade06@gmail.com"
+    },
+    "Comment_text": "Salam"
+  },
+  {
+    "Driver": {
+      "Name": "Tuncay",
+      "Surname": "Bagirov",
+      "Phone": "511111111",
+      "CarModel": "prius",
+      "CarVendor": "Tayota",
+      "CarNumber": "90-TB-999",
+      "CarColor": "red",
+      "Location": {
+        "X": 49.917760000000044,
+        "Y": 40.421100000000081
+      },
+      "Balance": 9.0999999999999996,
+      "Rating": 0,
+      "CountTravel": 1,
+      "TotalRating": 0,
+      "DriverBenefit": 7.7349999999999994,
+      "CompanyBenefit": 1.365
+    },
+    "Users": {
+      "History": [],
+      "Username": "Nihad",
+      "Password": "Nihad1234",
+      "Email": "nihataxundzade06@gmail.com"
+    },
+    "Comment_text": "Ela"
+  },
+  {
+    "Driver": {
+      "Name": "Nihad",
+      "Surname": "Axundzade",
+      "Phone": "559999999",
+      "CarModel": "Cruze",
+      "CarVendor": "Chevrolet",
+      "CarNumber": "90-AN-666",
+      "CarColor": "Black",
+      "Location": {
+        "X": 49.917760000000044,
+        "Y": 40.421100000000081
+      },
+      "Balance": 48.439999999999998,
+      "Rating": 40,
+      "CountTravel": 3,
+      "TotalRating": 0,
+      "DriverBenefit": 41.173999999999999,
+      "CompanyBenefit": 7.2659999999999991
+    },
+    "Users": {
+      "History": [],
+      "Username": "Nihad",
+      "Password": "Nihad1234",
+      "Email": "nihataxundzade06@gmail.com"
+    },
+    "Comment_text": "Ela"
+  },
+  {
+    "Driver": {
+      "Name": "Sabina",
+      "Surname": "Shukurova",
+      "Phone": "779999999",
+      "CarModel": "Tiida",
+      "CarVendor": "Nissan",
+      "CarNumber": "90-SS-797",
+      "CarColor": "Purple",
+      "Location": {
+        "X": 49.917760000000044,
+        "Y": 40.421100000000081
+      },
+      "Balance": 31.879999999999999,
+      "Rating": 5,
+      "CountTravel": 2,
+      "TotalRating": 0,
+      "DriverBenefit": 27.097999999999999,
+      "CompanyBenefit": 4.782
+    },
+    "Users": {
+      "History": [],
+      "Username": "Nihad",
+      "Password": "Nihad1234",
+      "Email": "nihataxundzade06@gmail.com"
+    },
+    "Comment_text": "Ela"
+  }
+]

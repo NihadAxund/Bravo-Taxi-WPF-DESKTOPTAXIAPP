@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Bravo_Taksi.UserControls.UserComment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Bravo_Taksi.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="1500" Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label FontSize="20"  Name="Email_lbl" HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+            <Label Grid.Column="1" Name="Name_lbl"  FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+            <Label Grid.Column="2" Name="Surname_lbl" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+            <Label Grid.Column="3" Name="CarNumber_lbl" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+        </Grid>
+        <Grid Grid.Row="1">
+            <TextBox 
+                    Focusable="False"
+                    HorizontalAlignment="Center"
+                    Name="Comment_lbl"
+                    Margin="70,10,10,10"
+                    
+                    VerticalAlignment="Center"
+                    Width="400"
+                    Height="110"
+                    Style="{StaticResource MaterialDesignFilledTextBox}"
+                    TextWrapping="Wrap"
+                    MaxLength="200"
+                    materialDesign:TextFieldAssist.CharacterCounterVisibility="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxTextCountComboBox, Converter={StaticResource BooleanToVisibilityConverter}}"
+                    materialDesign:HintAssist.Hint="Comment" FontSize="14" CaretBrush="White" Foreground="Black" Background="#FFDCDADA" SelectionBrush="White"/>
+        </Grid>
+    </Grid>
+</UserControl>

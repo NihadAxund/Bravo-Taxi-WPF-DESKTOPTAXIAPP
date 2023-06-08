@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bravo_Taksi.View.LoadingPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bravo_Taksi.View"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="LoadingPanel" AllowsTransparency="True" Height="400" Width="400" Background="Aqua" WindowStyle="None" WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#FF2EB875">
+        <ProgressBar Width="100" Height="104"  Foreground="AliceBlue" 
+           Style="{StaticResource MaterialDesignCircularProgressBar}"
+           Value="0"
+           IsIndeterminate="True" LargeChange="0" FontSize="24">
+        </ProgressBar>
+    </Grid>
+</Window>

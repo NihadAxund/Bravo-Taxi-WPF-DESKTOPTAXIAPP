@@ -1,0 +1,65 @@
+﻿<Window x:Class="Bravo_Taksi.View.UserPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bravo_Taksi.View" 
+        xmlns:materialDesign1="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="UserPanel" Height="450" Width="800" ShowInTaskbar="True" ResizeMode="NoResize" MouseLeftButtonDown="OnMouseLeftButtonDown" Background="#72000000" WindowStyle="None" AllowsTransparency="True" Topmost="True" WindowStartupLocation="CenterScreen"  >
+    <Grid Background="#7F1C1C1C" >
+        <materialDesign1:Card Background="Transparent">
+            <TabControl
+
+    SnapsToDevicePixels="True"
+    Style="{StaticResource MaterialDesignNavigationRailTabControl}"
+    TabStripPlacement="Left" Background="{x:Null}">
+                <materialDesign1:NavigationRailAssist.FloatingContent>
+                    <Button Click="Button_Click"
+                       Margin="8"
+        Style="{StaticResource MaterialDesignFloatingActionAccentButton}" BorderBrush="{x:Null}" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Resources/car.gif" Opacity="0.1"/>
+                        </Button.Background>
+                    </Button>
+                </materialDesign1:NavigationRailAssist.FloatingContent>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel
+          Width="auto"
+          Height="auto">
+                            <materialDesign1:PackIcon
+            Width="24"
+            Height="24"
+            HorizontalAlignment="Center"
+            Kind="ClockOutline" Foreground="#990090FF" />
+                            <TextBlock
+            HorizontalAlignment="Center"
+            Text="Recent" Foreground="#990090FF" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="9*"/>
+                        </Grid.RowDefinitions>
+                        <WrapPanel Background="#330090FF" >
+                            <Label HorizontalAlignment="Center" FontSize="18" Foreground="#DDFFFFFF" FontWeight="Bold" >Start Location</Label>
+                            <materialDesign1:PackIcon Kind="MapMarkerDistance" VerticalAlignment="Center" Width="50" Height="33" HorizontalAlignment="Center" Foreground="#DDFFFFFF" />
+                            <Label HorizontalAlignment="Center" FontSize="18" Foreground="#DDFFFFFF" FontWeight="Bold" >Finish Location</Label>
+                            <materialDesign1:PackIcon Kind="CurrencyUsd" HorizontalAlignment="Center" Width="50" Height="33" Foreground="#DDFFFFFF"/>
+                            <Label HorizontalAlignment="Center" FontSize="18" Foreground="#DDFFFFFF" FontWeight="Bold" >Price</Label>
+                            <materialDesign1:PackIcon Kind="Taxi"   VerticalAlignment="Center" Width="50" Height="33" HorizontalAlignment="Center" Foreground="#DDFFFFFF"/>
+                            <Label HorizontalAlignment="Center" FontSize="18" Foreground="#DDFFFFFF" FontWeight="Bold" >Driver Name</Label>
+                            <Label HorizontalAlignment="Center" FontSize="18" Foreground="#DDFFFFFF" FontWeight="Bold" >Driver Surname</Label>
+                        </WrapPanel>
+                        <ListView Grid.Row="1" Name="Listim">
+
+                        </ListView>
+                    </Grid>
+                </TabItem>
+              
+            </TabControl>
+        </materialDesign1:Card>
+    </Grid>
+</Window>

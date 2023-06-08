@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bravo Taksi", "Bravo Taksi\Bravo Taksi.csproj", "{1CE4D917-EF53-4EB4-8498-DBE49E82BFEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CE4D917-EF53-4EB4-8498-DBE49E82BFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE4D917-EF53-4EB4-8498-DBE49E82BFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE4D917-EF53-4EB4-8498-DBE49E82BFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE4D917-EF53-4EB4-8498-DBE49E82BFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E5B6EE8-3246-494A-8F23-D9496383B1E6}
+	EndGlobalSection
+EndGlobal

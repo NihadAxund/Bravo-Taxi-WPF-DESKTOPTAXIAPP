@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Bravo_Taksi.UserControls.DriverRaiting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Bravo_Taksi.UserControls"
+             mc:Ignorable="d" 
+                        d:DesignHeight="60" d:DesignWidth="750"
+             Background="White" FontSize="20">
+    <Grid>
+        <StackPanel Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Name="Name_lbl">Nihad </Label>
+            <Label Name="Surname_lbl">Axundzade</Label>
+            <Label Name="Car_Number">77-nn-777</Label>
+            <Button Margin="10,0,0,0" Width="45" Focusable="False" BorderThickness="0" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/angryface.png"/>
+                </Button.Background>
+            </Button>
+
+            <Slider
+                Name="slider"
+                Margin="10,0,0,0"
+                IsEnabled = "False"
+              Value="-20"
+              Minimum="-20"
+              Maximum="20"
+             Focusable="False"
+            
+             Style="{StaticResource MaterialDesignDiscreteSlider}"
+             TickFrequency="10"
+             TickPlacement="BottomRight" Width="312" Height="25" />
+            <Button Margin="10,0,0,0" Width="45" Focusable="False" BorderThickness="0" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/happyface.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

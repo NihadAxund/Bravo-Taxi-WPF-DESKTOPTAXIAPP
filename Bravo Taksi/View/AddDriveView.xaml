@@ -1,0 +1,133 @@
+﻿<Window x:Class="Bravo_Taksi.View.AddDriveView"
+        xmlns:local="clr-namespace:Bravo_Taksi.View"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Name="AddWindow"
+    Title="DriversAddView"
+    Width="500"
+    Height="650"
+    AllowsTransparency="True"
+    Background="Transparent"
+    FontFamily="Product Sans"
+    ResizeMode="NoResize"
+    SizeToContent="WidthAndHeight"
+    TextElement.FontSize="13"
+    TextElement.FontWeight="Regular"
+    TextOptions.TextFormattingMode="Ideal"
+    TextOptions.TextRenderingMode="Auto"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+
+    <Border Background="White"
+            CornerRadius="20">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0"                 
+                       Grid.Column="0"
+                       Margin="20,0,50,0"
+                       VerticalAlignment="Center"
+                       FontFamily="Product Sans"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Text="Add driver" />
+                <Button  Click="Button_Click" Width="25" HorizontalAlignment="Right" Height="25" Margin="0,0,10,0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/delete-sign.png"/>
+                    </Button.Background>
+                    
+                </Button>
+
+                <StackPanel Grid.Row="1">
+                    <TextBox
+                         materialDesign:HintAssist.Hint="Drivers Name"
+                         materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Name="Drivers_name"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         FontSize="24" Text="" />
+                    <TextBox
+                        Name="Driver_surname"
+                         materialDesign:HintAssist.Hint="Driver Surname"
+                          materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         FontSize="24" />
+                    <TextBox
+                        Name="Driver_PN"
+                         materialDesign:HintAssist.Hint="Driver phone number"
+                          materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         FontSize="24" />
+                    <TextBox
+                        Name="Driver_MailAdress"
+                         materialDesign:HintAssist.Hint="Driver mail adress"
+                          materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+
+                         FontSize="24" />
+                    <TextBox
+                        Name="Car_Vendor"
+                         materialDesign:HintAssist.Hint="Car vendor"
+                          materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         FontSize="24" />
+                    <TextBox
+                        Name="Car_Model"
+                         materialDesign:HintAssist.Hint="Car model"
+                          materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         FontSize="24" />
+                    <TextBox
+                        Name="Car_number"
+                         materialDesign:HintAssist.Hint="Car number"
+                          materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         FontSize="24" />
+                    <TextBox
+                        Name="Car_color"
+                         materialDesign:HintAssist.Hint="Car Color"
+                          materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
+                         materialDesign:HintAssist.FloatingScale="0.50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         FontSize="24" />
+
+
+                    <Grid Width="450">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="83*"/>
+                            <ColumnDefinition Width="368*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button
+                              Command="{Binding Btn_Command}"
+                              Background="#2EB875"
+                              Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                              Height="50"
+                              Margin="25,40,20,0"
+                              materialDesign:ButtonAssist.CornerRadius="25"
+                              ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
+                              IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Grid.ColumnSpan="2">
+                            <TextBlock Text="Add" />
+                        </Button>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>

@@ -1,0 +1,204 @@
+﻿<Window x:Class="Bravo_Taksi.View.AdminPanelView"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        ResizeMode="NoResize" Background="White" Title="MainWindow" Width="3000" Height="800" Name="window" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized">
+    <Border Background="White" CornerRadius="20" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="#FF106D40">
+                <TextBlock
+                    
+                 Name="MyWipedText"
+                 Width="3000" Height="100" HorizontalAlignment="Right" FontSize="42" FontWeight="Bold" Foreground="White" Margin="0,0,0,-27" FontFamily="Palatino Linotype"> Bravo Taxi Admin Panel
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation
+                                      Storyboard.TargetName="MyWipedText" 
+                                      Storyboard.TargetProperty="(TextBlock.Width)"
+                                      To="1.0" Duration="0:0:8" 
+                                      AutoReverse="False" RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                </TextBlock>
+            </Grid>
+
+
+
+            <Image Width="25" HorizontalAlignment="Right"
+                 Height="25"
+                   MouseLeftButtonDown="Image_MouseLeftButtonDown"
+                 Margin="0,0,10,0"
+                 Source="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png"/>
+            <TabControl Name="FirstTAB_CNR" Visibility="Hidden" TabStripPlacement="Left" Grid.Row="1" Background="Transparent">
+                <TabControl.Resources>
+                    <Style TargetType="{x:Type TabItem}">
+                        <Setter Property="HeaderTemplate">
+                            <Setter.Value>
+                                <DataTemplate>
+                                    <ContentPresenter Content="{TemplateBinding Content}">
+                                    </ContentPresenter>
+                                </DataTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TabControl.Resources>
+                <TabItem Name="FirstDrivers"  FontSize="28" Background="#2EB875" Foreground="#B79FAD" Header=" Drivers ">
+                    <Grid>
+                        <ListView Name="FirstDriverListView" SelectionMode="Multiple" Margin="0,10,0,42" Grid.RowSpan="2" >
+                        </ListView>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+            <TabControl Name="TAB_CNR" Visibility="Visible" TabStripPlacement="Left" Grid.Row="1" Background="Transparent">
+                <TabControl.Resources>
+                    <Style TargetType="{x:Type TabItem}">
+                        <Setter Property="HeaderTemplate">
+                            <Setter.Value>
+                                <DataTemplate>
+                                    <ContentPresenter Content="{TemplateBinding Content}">
+                                    </ContentPresenter>
+                                </DataTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TabControl.Resources>
+                <TabItem Name="Drivers" FontSize="28" Background="#2EB875" Foreground="Black" Header="Edit Drivers">
+                    <Grid Width="Auto">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10*"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        <ListBox Name="DriverListView" Grid.Row="0" ItemsSource="{Binding Drivers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" SelectionMode="Multiple" Margin="0,10,0,42" Grid.RowSpan="2" >
+
+                        </ListBox>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                            <Grid Width="480">
+                                <Button
+                               Click="Button_Click"     
+                              Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                              Height="50"
+                              Margin="10,0,40,10"
+                              Background="#2EB875"
+                            
+                              materialDesign:ButtonAssist.CornerRadius="25"
+                              ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
+                              IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
+                                    <TextBlock Text="Add" />
+                                </Button>
+                            </Grid>
+                            <Grid
+                               Width="480">
+                                <Button
+                                    Command="{Binding Del}"
+                              Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                              Height="50"
+                              Margin="30,0,0,10"
+                              Background="#2EB875"
+                              materialDesign:ButtonAssist.CornerRadius="25"
+                              ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock Text="Delete" />
+                                </Button>
+                            </Grid>
+
+                        </StackPanel>
+
+                    </Grid>
+                </TabItem>
+                <TabItem FontSize="28" Background="#2EB875" Foreground="Black" Header="Price">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Vertical">
+                            <TextBlock  Foreground="#2EB875" FontSize="38" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 270" Text="Price Per KM"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1">
+                            <TextBlock x:Name="Price_TectBox" Background="Transparent" Foreground="Black" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 200" Text="0.40"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2">
+                            <TextBox x:Name="Price_add"  FontSize="30" Width="220" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 0" ></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3">
+                            <Grid   Width="350">
+                                <Button
+                                    Command="{Binding Update_Binding}"
+                              Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                              Height="50"
+                              Margin="25,0,20,10"
+                              Background="#2EB875"
+                              materialDesign:ButtonAssist.CornerRadius="25"
+                              ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
+                              IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
+                                    <TextBlock Text="Update" />
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+                <TabItem FontSize="28" Background="#2EB875" Foreground="Black" Header="About">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0"  Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" >Total income: </Label>
+                        <Label Grid.Column="2"  Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" Content="{Binding Price1}"></Label>
+                        <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80"  >Driver income: </Label>
+                        <Label Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" Content="{Binding Price2}" ></Label>
+                        <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80"  >Company income:</Label>
+                        <Label Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" Content="{Binding Price3}" ></Label>
+
+                    </Grid>
+                </TabItem>
+                <TabItem Name="Drivers2" FontSize="28" Background="#2EB875" Foreground="Black" Header="Comments">
+                    <Grid Width="Auto">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10*"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        <ListBox Name="List_Comment" Grid.Row="0" ItemsSource="{Binding Drivers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" SelectionMode="Multiple" Margin="0,10,0,42" Grid.RowSpan="2" >
+
+                        </ListBox>
+                    </Grid>
+                </TabItem>
+                <TabItem Name="Raiting" FontSize="28" Background="#2EB875" Foreground="Black" Header="Rating">
+                    <Grid Width="Auto">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10*"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        <ListBox Name="List_Rainting" Grid.Row="0" ItemsSource="{Binding Drivers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" SelectionMode="Multiple" Margin="0,10,0,42" Grid.RowSpan="2"/>
+
+
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Border>
+</Window>
