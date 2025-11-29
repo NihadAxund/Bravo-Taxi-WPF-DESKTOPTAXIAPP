@@ -4,7 +4,6 @@
 
 ![Project Logo](link_to_logo.png) (You can include a project logo if available)
 
-This project is an open-source version of a transportation service application called [Barvo-taxi](https://www.barvo-taxi.com). Barvo-taxi allows users to book taxi services quickly and securely.
 
 ## Features
 
@@ -14,4 +13,4 @@ This project is an open-source version of a transportation service application c
 - Payment options with different payment methods.
 - Viewing trip history.
 
-Video Project: https://youtu.be/wHayca_ZHfs?si=Hp96SmGdK9bKz8UT
+
